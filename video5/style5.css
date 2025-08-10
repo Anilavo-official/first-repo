@@ -1,0 +1,19 @@
+th{
+    /* th stands for table header */
+    background-color: #076875;
+    /* changes the backround color */
+    color: rgb(31, 47, 75);
+    /* changes the text color */
+    border: 3px solid #2918c4;
+    padding: 6px;
+    /* shifting space each cells require */
+}
+td{
+    /* td stands for table data */
+    background-color: #6ac6d2;
+    /* changes the backround color */
+    border: 2px solid #1c91e4;
+    /* changes the thickness of the borders and change color*/
+    padding: 2px;
+    /* shifting space each cells require */
+}
