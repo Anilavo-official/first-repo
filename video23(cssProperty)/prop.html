@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            border: 2px solid black;
+            border-color: #ee310b;
+            display: inline-block;/*block, inline(not top), inline-block, none*/
+            padding: 40px;
+            width: 300px;/* Increase width of only for block and inline-block*/
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .box2{
+            display: none;
+
+            background-color: lightblue;
+        }
+        .box3{
+            display: block;
+            width: 400px;
+            padding: 40px;
+            margin: 20px;
+            background-color: lightgreen;
+            visibility: hidden; /*visible, hidden*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box2">I'm a Box</div>
+    <div class="box">Hello World</div>
+    <div class="box3">Third Box</div>
+    <span>I'm a Span</span>
+    <span>Boy</span>
+    <div>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display">This link is about the CSS display property</a>
+    </div>
+    
+</body>
+</html>

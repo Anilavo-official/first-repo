@@ -8,14 +8,54 @@
 <body>
     <h1>Making my First Form</h1>
     <form action="post">
+        <div> 
+        <!-- Div is used to group related elements together without using <br> -->
         <label for="username">Enter Username :</label>
         <input type="text" id="username" name="username" placeholder="Enter your username" >
         <!-- id is used to create unique indentifier for a element -->
-        <br><br>
+        </div>
+
+
+        <div>   
         <label for="male">Male</label>
         <input type="radio" id="male" name="gender" value="male">
         <label for="female">Female</label>
         <input type="radio" id="female" name="gender" value="female">
+        <!-- name attribute groups radio buttons so only one can be selected -->
+        </div>
+        <!-- OMR -->
+
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="Yes">
+            <label for="subscribe">Subscribe to Newsletter</label>
+        </div>
+        <!-- Checkbox -->
+
+
+        <div>
+            <label for="country">Choose your country:</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+        <!-- Dropdown Menu -->
+
+
+        <div>
+            <label for="comments">Comments:</label> 
+            <br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+        </div>
+        <!-- Text Area Eg : Feedback-->
+
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>  
     </form>
     
 </body>

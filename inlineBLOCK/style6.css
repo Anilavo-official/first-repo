@@ -1,0 +1,14 @@
+p{
+    background-color: rgb(29, 144, 176);
+}
+a{
+    color: rgb(171, 22, 22);
+}
+div{
+    border: 2px solid rgb(204, 174, 213);
+    background-color: rgb(225, 236, 14);
+}
+span{
+    font-size: 20px;
+    background-color: rgb(14, 112, 236);
+}
