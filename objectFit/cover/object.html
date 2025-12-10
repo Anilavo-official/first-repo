@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-Fit & Object-Cover(Position
+        )</title>
+    <style>
+        .container {
+            width: 488px;
+            height: 466px;
+            border: 2px solid black;
+            overflow: hidden;
+            background-position: top center;
+            background-image: url("https://cdn.wallpapersafari.com/55/83/Pl6QHc.jpg");
+        }
+        img {
+            width: 488px;
+            height: 466px;
+            object-fit: cover; /* fill, contain, cover, none, scale-down */   
+            object-position: top right; 
+            /* top left   , top center   , top right, 
+               center left, center center, center right, 
+               bottom left, bottom center, bottom right */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- <img src="https://cdn.wallpapersafari.com/55/83/Pl6QHc.jpg" alt="Mountain"> -->
+
+    </div>
+    
+</body>
+</html>

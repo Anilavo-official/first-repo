@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variable</title>
     <style>
-        .nav {
-            background-color: #16e350d5;
-           
-        }
-        .container {
-            background-color: #40de20;
-            
+        :root {
+            --color: blue;
+            --defpad: 10px;
+            --seccolor: lightblue;
+            /* CSS Variable Declaration */
+            --defopacity: 0.5;
         }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            background-color: var(--color);
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: var(--defpad);
+            font-size: 20px;
+            color: white;
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child {
+            background-color: var(--color, red
+                    /* Fallback Color */
+                );
+            /*local CSS Variable Usage*/
+            --color: rgb(221, 16, 16);
+            /* CSS Variable Overriding */
+        }
+
+        .container {
+            background-color: var(--seccolor);
+            opacity: var(--defopacity);
+            /* CSS Variable Usage of Opacity*/
+
+        }
     </style>
 </head>
+
 <body>
     <div class="nav">
         <ul>
@@ -25,8 +64,10 @@
         </ul>
     </div>
     <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias natus magni minima quos animi expedita accusamus totam dolore, odit suscipit.llorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias natus magni minima quos animi expedita
+        accusamus totam dolore, odit suscipit.llorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
     </div>
-    
+
 </body>
+
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body {
+            background-color: rgb(223, 160, 160);
+        }
+
+        /* media not/only mediatype and (expression)
+           CSS code;
+        */
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: rgb(33, 102, 222);
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        .boxes {
+            display: flex;
+
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: rgb(16, 221, 135);
+            margin: 10px;
+            padding: 10px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div>I have a pink background</div>
+    <div class="boxes">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selctors</title>
+    <style>
+        .box:first-child {
+            /*If we want to select the first child among siblings*/
+            background-color: red;
+        }
+
+        .box::first-line {
+            /*If we want to select the first line of the element*/
+            font-weight: bold;
+            font-size: 20px;
+            color: grey;
+        }
+
+        .boxes * {
+            /*If we want to select all the elements inside a parent element*/
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        [data-color="primary"] {
+            /*Attribute selector*/
+            margin-top: 45px;
+            padding-top: 20px;
+        }
+
+        .box:nth-child(2) {
+            /*If we want to select the second child among siblings*/
+            background-color: rgb(52, 119, 141);
+        }
+
+        .box:nth-last-child(1) {
+            /*If we want to select the last child among siblings*/
+            background-color: rgb(198, 140, 183);
+        }
+
+        .boxes::before {
+            content: "Hello I am before pseudo element";
+            display: block;
+            border: 2px solid black;
+            font-size: 24px;
+            color: green;
+            margin-bottom: 15px;
+        }
+
+        ::selection {
+            background-color: rgb(218, 14, 14);
+            color: white;
+        }
+
+        .box::first-letter {
+            font-size: 30px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        input::placeholder {
+            font-size: 13px;
+            width: 300px;
+            color: rgb(158, 158, 157);
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am Box Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Repellat, laudantium dolores deleniti deserunt repellendus sapiente. Atque nobis laboriosam excepturi culpa
+            quam sunt rerum enim voluptates quo cupiditate, at quae consequatur itaque laborum voluptatum ullam non
+            blanditiis eveniet. Enim, recusandae vel. Quia vel harum, animi repudiandae perferendis perspiciatis
+            voluptatem voluptatum saepe quasi, odio non vero rem quod dolorum possimus, necessitatibus labore eveniet
+            expedita cum dignissimos quibusdam commodi neque! Nam maxime excepturi molestiae expedita pariatur quos
+            delectus ullam doloremque vero, recusandae repudiandae quas adipisci laudantium fugit nulla perspiciatis,
+            quis dolores. Explicabo quam repellendus numquam ratione, deleniti vel esse accusantium. At, veniam. Quam.
+        </div>
+        <div class="box">Hey I am Box 2</div>
+        <div class="box">Hey I am Box 3</div>
+        <div class="box">Hey I am New Box</div>
+        <input type="text" placeholder="Select this text to see selection pseudo element">
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+</head>
+<body>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            border: 2px solid black;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: coral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            animation: moveAndColor 4s/*duration*/ ease/*timing-function*/ 0s/*delay*/ infinite/*iteration-count*/ alternate;
+            /* animation-name, duration, timing-function, delay, iteration-count, direction, fill-mode */
+        }
+
+        @keyframes moveAndColor {
+            0% {
+                transform: translateX(0) scale(1);
+                background-color: coral;
+            }
+            50% {
+                transform: translateX(100px) scale(1.2);
+                background-color: teal;
+            }
+            100% {
+                transform: translateX(0) scale(1);
+                background-color: coral;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="box">
+            Animated Box
+        </div>
+    </div>
+    
+</body>
+</html>

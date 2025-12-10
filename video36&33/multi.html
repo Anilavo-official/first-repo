@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-color CSS Website</title>
+    <style>
+        :root {
+            --main-color: #4CAF50;
+            --secondary-color: #ff5722;
+            --text-color: #1082e0;
+        }
+        body{
+            background-color: var(--text-color);
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: var(--main-color);
+            display:flex
+        }
+        ul li {
+            color: var(--text-color);
+            border-right:1px solid var(--secondary-color);
+            padding: 14px 16px;
+            font:  18px "Comic Sans MS", sans-serif;
+        }
+        ul li a {
+            text-decoration: underline;
+            color: var(--text-color);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>    
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

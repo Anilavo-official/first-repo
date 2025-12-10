@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid rgb(174, 160, 160);
+            display: flex;
+            flex-direction: row;/*main axis direction*/
+            height: 80vh;
+            justify-content: ;/*align items in horizontal direction*/
+            align-items: center;/*align items in vertical direction*/
+            /*flex-wrap: wrap;/*to wrap the items to next line*/
+            align-content: flex-start;/*align the rows in vertical direction when there are multiple rows*/
+            /*No justify-items in flexbox*/
+            gap: 0px;/*gap between items*/
+            row-gap: 0px;/*gap between rows*/
+            column-gap: 0px;/*gap between columns*/
+            gap: 10px 20px;/*row gap and column gap*/
+
+        }
+        .item{
+            height: 20px;
+            width: 120px;
+            background-color: red;
+            padding: 5px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            text-align: center;
+            color: white;
+        }
+        .item2{
+            flex-grow: 2;
+            align-self: flex-start;
+        }
+        .item1{
+            flex-shrink: 2;
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">Item No. 1</div>
+            <div class="item item2">Item No. 2</div>
+            <div class="item item3">Item No. 3</div>
+            <div class="item item4">Item No. 4</div>
+            <div class="item item5">Item No. 5</div>
+        </div>
+    </main>
+    
+</body>
+</html>
